@@ -1,0 +1,16 @@
+Sudo Buffer overflow
+
+https://tryhackme.com/room/sudovulnsbof
+ssh -p 4444 USERNAME@IP
+Username: tryhackme	
+Password: tryhackme
+------------------------------------------------------------
+1.	SSH with username tryhackme, port 4444 and the given IP.
+ssh -p 4444 tryhackme@10.10.70.144
+2.	“Ls” to find the exploit that’s already downloaded for this machine
+3.	“.\exploit” to run the exploit
+4.	Just wait… You will notice a # will appear, so you are in the exploit now…
+5.	If you do an “whoami” you notice you are root now, so…. let’s find the flag!
+6.	You can’t “cd” in the exploit, the best change is that you find it in the root directory so do an… 
+“cat /root/root.txt” 
+7.	Success!!
